@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            test
+        </title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Macondo&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/hover-header.css">
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/fade.css">
+        <link rel="stylesheet" href="styles/topbutton.css">
+        <link rel="stylesheet" href="styles/form.css">
+        <link rel="stylesheet" href="styles/trailer.css">
+        <link rel="stylesheet" href="styles/section.css">
+        <link rel="stylesheet" href="styles/carousel.css">
+    </head>
+
+    <body>
+        <div class="header macondo-regular">
+            <div class="left-header">
+                Ard
+            </div>
+            <div class="right-header">
+                <a href="#qualifications" class="margin-2per">Qualifications</a>
+                <a href="#project" class="margin-2per">Projects</a>
+                <a href="#contact" class="margin-2per">Contacts</a>
+            </div> 
+        </div>
+
+        <section id="introduction" class="flex-container">
+           <div class="card">
+                <h2 class="section-heading bebas-neue-regular">
+                    Hi there, I'm Ard.
+                </h2>
+                <p class="section-body">Hi, I'm Aaryan Raj Daibagya. </p>
+           </div>
+
+           <div class="image-container" >
+            <img src="images/placeholder-pic.jpg"  />
+            </div>
+        </section>
+        
+        <section id="qualifications" class="flex-container">
+            <div>
+
+            </div>
+            <div class="card right-aligned">
+                <div class="subsection">
+                    <h2 class="section-heading bebas-neue-regular">Education</h2>
+                    <div class="subsubsection">
+                    <p class="section-body">Bachelors in Computer Engineering</p>
+                    <p class="section-subtext">Khwopa College of Engineering</p>
+                    </div>
+                    <div class="subsubsection">
+                        <p class="section-body">Secondary Level Education &#40;&#43;2 in Science&#41; </p>
+                        <p class="section-subtext">Khwopa Secondary School</p>
+                    </div>
+                    <div class="subsubsection">
+                        <p class="section-body">SEE</p>
+                        <p class="section-subtext">Nepal Police Secondary Boarding School, Kavre</p>
+                    </div>
+                </div>
+                <hr style="border: 1px solid rgb(112, 112, 112); width: 95%;">
+                <div class="subsection">
+                    <h2 class="section-heading bebas-neue-regular">Skills and Expertise</h2>
+                    <div class="subsubsection">
+                        <p class="section-body">Frontend</p>
+                        <p class="section-subtext">HTML, CSS, Javascript</p>
+                    </div>
+                    <div class="subsubsection">
+                        <p class="section-body">Programming Languages</p>
+                        <p class="section-subtext">C, C&#43;&#43;, Python, Pytorch </p>
+                    </div>
+                    <div class="subsubsection">
+                        <p class="section-body">Tools</p>
+                        <p class="section-subtext">Git, Godot</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="project" class="flex-container">
+            <div class="card">
+                    <p class="section-heading bebas-neue-regular">Projects</p>
+                    <div class="carousel">
+                        <button class="prev scrollbutton">&#10094;</button>
+                        <div class="carousel-wrapper carousel-track">
+                                <div class="carousel-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/placeholder-pic.png" alt="Title 1">
+                                        <div class="image-title">Title 1</div>
+                                    </a>
+                                </div>
+                                
+                                <div class="carousel-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/placeholder-pic.png" alt="Title 1">
+                                        <div class="image-title">Title 2</div>
+                                    </a>
+                                    </div>
+                                
+                                <div class="carousel-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/placeholder-pic.png" alt="Title 1">
+                                        <div class="image-title">Title 3</div>
+                                    </a>
+                                </div>
+                                
+                                <div class="carousel-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/placeholder-pic.png" alt="Title 1">
+                                        <div class="image-title">Title 3</div>
+                                    </a>
+                                </div>
+                                <!-- <div class="carousel-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/placeholder-pic.png" alt="Title 1">
+                                        <div class="image-title">Title 4</div>
+                                    </a>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <a href="#" target="_blank">
+                                        <img src="images/placeholder-pic.png" alt="Title 1">
+                                        <div class="image-title">Title 5</div>
+                                    </a>
+                                </div> -->
+                            </div>
+                            <button class="next scrollbutton">&#10095;</button>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="flex-container">
+            <div class="card right-aligned">
+                <p class="section-heading bebas-neue-regular">Contact Me</p>
+                <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea rows="6" placeholder="Your Message" required></textarea>
+                    <button class="send-button" type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="trailer" class="trailer">
+            <div class="trailer-block">
+                </div>
+            </div>
+        </section>
+        
+        <button id="backToTop">⬆</button>
+        <script src="scripts/fadescript.js"></script>
+        <script src="scripts/top-button.js"></script>
+        <script src="scripts/image-path.js"></script>
+        <script src="scripts/carousel.js"></script>
+    </body>
+</html>
