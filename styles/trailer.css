@@ -21,9 +21,28 @@
     font-size: 20px;
 }
 
+.trailer-other a{
+    color: inherit;
+}
+
 .trailer-block{
     display: flex;
     flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+
+}
+
+.image-social{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+.trailer-block-block{
+    display: flex;
+    flex-direction: row;
     padding-left: 5%;
     padding-right: 5%;
     text-align: center;

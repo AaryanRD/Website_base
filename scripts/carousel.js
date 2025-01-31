@@ -4,12 +4,12 @@ const nextButton = document.querySelector(".next");
 const prevButton = document.querySelector(".prev");
 
 let index = 0;
-const imagesPerView = 3; // Maximum images visible at once
+const imagesPerView = 3; 
 const slideWidth = slides[0].getBoundingClientRect().width;
 
-// Function to move slides one at a time
+
 function moveToSlide(newIndex) {
-    // Wrap around logic, preventing index from going out of bounds
+    
     if (newIndex < 0) {
         index = slides.length - imagesPerView;
     } else if (newIndex >= slides.length - imagesPerView + 1) {
@@ -20,16 +20,13 @@ function moveToSlide(newIndex) {
     track.style.transform = `translateX(-${index * slideWidth}px)`;
 }
 
-// Auto-slide every 3 seconds
-let autoSlide = setInterval(() => moveToSlide(index + 1), 3000);
+let autoSlide = setInterval(() => moveToSlide(index + 1), 10000);
 
-// Restart auto-slide on interaction
 function resetAutoSlide() {
     clearInterval(autoSlide);
-    autoSlide = setInterval(() => moveToSlide(index + 1), 3000);
+    autoSlide = setInterval(() => moveToSlide(index + 1), 10000);
 }
 
-// Button event listeners
 nextButton.addEventListener("click", () => {
     moveToSlide(index + 1);
     resetAutoSlide();
@@ -40,7 +37,6 @@ prevButton.addEventListener("click", () => {
     resetAutoSlide();
 });
 
-// Dragging functionality
 let isDragging = false;
 let startX, currentTranslate, prevTranslate;
 
@@ -62,9 +58,9 @@ track.addEventListener("mouseup", (e) => {
     isDragging = false;
     track.style.transition = "transform 0.5s ease-in-out";
     const movedBy = startX - e.clientX;
-    if (movedBy > 50) moveToSlide(index + 1); // Move to the next slide if dragged sufficiently
-    else if (movedBy < -50) moveToSlide(index - 1); // Move to the previous slide if dragged sufficiently
-    else moveToSlide(index); // Stay on the current slide if not dragged enough
+    if (movedBy > 50) moveToSlide(index + 1);
+    else if (movedBy < -50) moveToSlide(index - 1); 
+    else moveToSlide(index);
     resetAutoSlide();
 });
 
@@ -72,7 +68,7 @@ track.addEventListener("mouseleave", () => {
     isDragging = false;
 });
 
-// Ensure initial display of images
+
 window.addEventListener("load", () => {
-    moveToSlide(index); // Move to the starting index
+    moveToSlide(index);
 });

@@ -1,6 +1,6 @@
 .carousel {
     position: relative;
-    width: 100%; /* Make it fit inside .card */
+    width: 100%;
     overflow: hidden;
     border-radius: 8px;
     display: flex;
@@ -13,7 +13,6 @@
     position: relative;
 }
 
-/* Dark gradient on sides */
 .carousel-wrapper::before,
 .carousel-wrapper::after {
     content: "";
