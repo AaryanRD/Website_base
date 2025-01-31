@@ -1,0 +1,30 @@
+.trailer{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:  rgba(54, 54, 54, 1);
+    z-index: 10;
+    color:rgb(255, 255, 255);
+    align-items: center;
+}
+
+.trailer-head{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.trailer-other{
+    font-size: 20px;
+}
+
+.trailer-block{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}

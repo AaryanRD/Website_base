@@ -1,0 +1,27 @@
+
+.section-heading{
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: rgb(58, 58, 58);
+ }
+ 
+ .section-body{
+     font-size: 22px;
+     margin: 0;
+     color: rgb(77, 73, 78);
+ }
+ 
+ .section-subtext{
+    font-size: 10x;
+    margin: 0;
+ }
+
+.subsection{
+    margin: 5px;
+}
+
+.subsubsection{
+    margin-bottom: 10px;
+}

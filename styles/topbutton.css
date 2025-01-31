@@ -1,0 +1,22 @@
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background: linear-gradient(45deg, #ff416c, #91bda8);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: none; /* Hide by default */
+    transition: opacity 0.3s;
+    z-index: 20;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    font-size: 20px;
+}
+
+#backToTop:hover {
+    background-color: #0056b3;
+}

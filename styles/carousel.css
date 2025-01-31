@@ -1,0 +1,116 @@
+.carousel {
+    position: relative;
+    width: 100%; /* Make it fit inside .card */
+    overflow: hidden;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Dark gradient on sides */
+.carousel-wrapper::before,
+.carousel-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 15%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.carousel-wrapper::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent);
+}
+
+.carousel-wrapper::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.8), transparent);
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    position: relative;
+    width: 100%; /* Each slide takes full width of its container */
+    flex-shrink: 0;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.carousel img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Title overlay */
+.image-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/* Adjust buttons to stay within the card */
+.scrollbutton {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 2;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Hover effect for buttons */
+.scrollbutton:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Ensure buttons appear over images */
+.carousel-item {
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 calc(100% / 3); /* Adjust for 3 images visible at once */
+    padding: 0 5px; /* Space between images */
+    box-sizing: border-box;
+}
+
